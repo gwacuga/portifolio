@@ -5,12 +5,6 @@
     box-sizing: border-box;
 }
 
-.container {
-  width: 90%; /* Or 100% to fill the screen */
-  max-width: 1200px; /* Set a max-width to prevent stretching on larger screens */
-}
-
-
 /* Body & Font Styles */
 body {
     font-family: 'Arial', sans-serif;
@@ -126,6 +120,11 @@ form input, form textarea {
     border-radius: 5px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 form button {
     background-color: #fff;
     color: #007BFF;
@@ -133,6 +132,26 @@ form button {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.container {
+  width: 90%; /* Or 100% to fill the screen */
+  max-width: 1200px; /* Set a max-width to prevent stretching on larger screens */
+}
+
+/* For screens smaller than 768px (phones) */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack the navbar items vertically */
+  }
+
+  .hero-section {
+    font-size: 1.5rem; /* Adjust text size for smaller screens */
+  }
 }
 
 form button:hover {
