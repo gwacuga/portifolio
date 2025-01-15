@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+.container {
+  width: 90%; /* Or 100% to fill the screen */
+  max-width: 1200px; /* Set a max-width to prevent stretching on larger screens */
+}
+
+
 /* Body & Font Styles */
 body {
     font-family: 'Arial', sans-serif;
