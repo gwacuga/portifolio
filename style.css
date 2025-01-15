@@ -20,12 +20,6 @@ header {
     padding: 15px 0;
     text-align: center;
 }
-{
-.container {
-  width: 90%; /* Or 100% to fill the screen */
-  max-width: 1200px; /* Set a max-width to prevent stretching on larger screens */
-}
-
 
 header nav ul {
     list-style: none;
